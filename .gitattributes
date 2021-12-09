@@ -1,0 +1,14 @@
+# Define o comportamento padrao, caso as pessoas não tenham core.autocrlf set. definido
+* text=auto
+
+# Declarar explicitamente os arquivos de texto que você deseja que sempre sejam normalizados e convertidos
+# para terminações de linha nativas no checkout.
+*.c text
+*.h text
+
+# Declarar arquivos que sempre terão terminações de linha CRLF no checkout
+*.sln text eol=crlf
+
+# Denota todos os arquivos que são verdadeiramente binários e não devem ser modificados
+*.png binary
+*.jpg binary
